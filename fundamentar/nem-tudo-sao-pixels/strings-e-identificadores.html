@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+      }
+      .box {
+        height: calc(100% - 40px);
+        width: 100%;
+        background-image: url(http://source.unsplash.com/random);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+      }
+      span {
+        color: blueviolet;
+        font-weight: bold;
+      }
+
+			.box::after {
+				content: "Coloquei um texto na imagem";
+				color: white;
+			}
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1># String e identificadores</h1>
+      <p><span>String:</span> Texto envolto em aspas</p>
+      <p><span>Identificadores:</span> red, black, gold</p>
+    </div>
+
+    <div class="box"></div>
+  </body>
+</html>

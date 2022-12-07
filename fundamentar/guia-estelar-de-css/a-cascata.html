@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>Document</title>
+
+    <style>
+      h1 {
+        color: red;
+      }
+
+      h1 {
+        font-size: 12px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: green">Título</h1>
+    <h2># A Cascata (cascading)</h2>
+    <p>
+      A escolha do browser de qual regra aplicar, caso haja muitas regras para o
+      mesmo elemento.
+    </p>
+
+    <ul>
+      <h2>Seu estilo é lido de cima para baixo</h2>
+      <li>
+        É levado em consideração 3 fatores
+        <ol>
+          <li>Origem do estilo</li>
+          <li>Especificidade</li>
+          <li>Importância</li>
+        </ol>
+      </li>
+      <li>
+        Origem do estilo
+        <ol>
+          <li>inline > tag style > tag link</li>
+        </ol>
+      </li>
+      <li>
+        Especificidade
+        <ol>
+          <li>
+            É um cálculo matemático, onde cada tipo de seletor e origem do
+            estilo, possuem valores a serem considerados.
+          </li>
+        </ol>
+      </li>
+      <li>
+        Especificidade
+        <ul>
+          <h2>
+            É um cálculo matemático, onde, cada tipo de seletor e origem do
+            estilo, possuem valores a serem considerados.
+          </h2>
+          <li>
+            0. Universal selector, combinators e negation pseudo-class (:nopt())
+          </li>
+          <li>
+            1. Element type selector e pseudo-elements (::before, ::after)
+          </li>
+          <li>10. Classes e attribute selectors ([type="radio"])</li>
+          <li>100. ID selector</li>
+          <li>1000. Inline</li>
+        </ul>
+      </li>
+      <li>
+        A regra !important
+        <ol>
+          <li>É</li>
+        </ol>
+      </li>
+    </ul>
+  </body>
+</html>
